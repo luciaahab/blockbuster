@@ -1,47 +1,23 @@
 # Blockbuster 
 
-![portada](/alquiler-de-películas.jpeg)
+![portada](../alquiler-de-películas.jpeg)
+
+EL proyecto presentaba una serie de archivos csv para crear una base de datos. Por el contenido y forma de los archivos, parece que se trata de un videoclub que ha ampliado su negocio.
+
+## Objetivos
+
+- Crear un repo
+- Descargar y limpiar datos
+- Crear ERD
+- Inserción de datos
+- Crear queries
 
 
-El 
+## Proceso y decisiones
 
-## TO DO's
+De todos los archivos csv los que hacen referencia a las bases de datos, nueva y antigua, del negocio son el de old_HDD y el de films. EL archivo old_HDD solo hace referencia a características de las películas, mientras que el archivo film incorpora información que se puede relacionar con otras tablas para la gestión del necio. El problema es que entre el archivo old_HDD y el nuevo inventario no hay una id común. 
 
-1. Explore the data and write down what you have found
-   - you can use: `df.describe()`, `df["column"]`, etc.
-1. Clean the data (you can get rid of columns that doesn't give information)
-1. Build your databse
-1. Write at least 10 queries including: join, groupby, orderby, where, subqueries….that you think will be useful to get interesting insights from the data.**(SELECT* FROM TABLE_NAME doesn't count...)** 
-+ Bonus: Get creative!!! Create totally new tables or enrich the csv files with new data (found on the internet or even made up) that makes your database more valuable.
+En general, además de limpiar las tablas, se ha tomado una decisión relevante a nivel estructural: suprimir la tabla de la antigua base de datos *old_HDD*, e incorporar el único campo relevante, category_id, a lo que se ha decidido que sea la la tabla vertebradora de la base de datos, la tabla *film*. 
 
+Una vez hecho esto el resto de tablas se ha ordenado fácilmente entre las que responden a información de las películas que tiene el videoclub y las que responden a información sobre el inventario y el alquiler. 
 
-## Suggested Ways to Get Started
-
-- Examine the data and try to understand what the fields mean before building the database.
-- Break the project down into different steps - use the topics covered in the lessons to form a check list, add anything else you can think of that may be wrong with your data set, and then work through the check list.
-- Use the tools in your tool kit - your knowledge of Python, data structures, Pandas, and data wrangling.
-  Work through the lessons in class & ask questions when you need to! Think about adding relevant code to your project each night, instead of, you know... procrastinating.
-- Commit early, commit often, don’t be afraid of doing something incorrectly because you can always roll back to a previous version.
-- Consult documentation and resources provided to better understand the tools you are using and how to accomplish what you want.
-
-## How to deliver the project
-
-1. Create a new repo with the name `sql-data-base-building` on your github account.
-   - Create a `README.md` file on repo root with project documentation. Make sure to include as much useful information as possible. Someone that finds the README.md should be able to fully get a gist of the project without browsing your files.
-   - Include a `.gitignore`
-   - At least 1 jupyter notebook is required
-   - Include the necessary code files to create and feed the database.
-   - Including your functions in a `src.py` is mandatory.
-   
-2. Open an `Issue` on this repo and paste your own repo's link.
-
-## Links & Resources
-
-
-- <https://numpy.org/doc/1.18/>
-- <https://pandas.pydata.org/>
-- https://docs.python.org/3/library/functions.html
-- https://matplotlib.org/
-- https://seaborn.pydata.org/
-- https://pandas.pydata.org/docs/
-- https://towardsdatascience.com/beware-of-storytelling-with-data-1710fea554b0?gi=537e0c10d89e
