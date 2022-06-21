@@ -1,6 +1,6 @@
 # Blockbuster 🎥
 
-![bloskbuster](blockbuster/alquiler-de-películas.jpeg)
+![blockbuster](/alquiler-de-películas.jpeg)
 
 EL proyecto presentaba una serie de archivos csv para crear una base de datos. Por el contenido y forma de los archivos, parece que se trata de un videoclub que ha ampliado su negocio.
 
