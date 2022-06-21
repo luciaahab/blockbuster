@@ -1,9 +1,9 @@
-# W4 Project - Building mySQL Data-base 
+# Blockbuster 
 
-![portada](https://i0.wp.com/itsoftware.com.co/content/wp-content/uploads/2018/03/que-es-y-para-que-sirve-mysql-1.jpg)
+![portada](/alquiler-de-películas.jpeg)
 
 
-The goal of this project is to build your own database from several csv files. For this project, you will start with 6 `csv` files. You will need to download it, import it, use your data wrangling skills to clean it up, have a first look at the data to figure out out to structure it, prepare it to be loaded in a sql database and finally build it. Some graphs to better understand the data will surely be useful!!
+El 
 
 ## TO DO's
 
